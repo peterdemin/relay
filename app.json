@@ -1,0 +1,8 @@
+{
+  "name": "Secure relay for small payloads",
+  "description": "Exchange small files without direct network access",
+  "image": "heroku/python",
+  "repository": "https://github.com/peterdemin/relay",
+  "keywords": ["python", "flask", "relay" ],
+  "addons": []
+}
