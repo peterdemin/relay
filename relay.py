@@ -16,11 +16,12 @@ def relay_payload(key):
         if request.method == 'POST':
             if key in storage:
                 file = request.files['file']
-                storage[key] = file.read()
-                return 'ok\n'
+                if file.size <= 10240:
+                    storage[key] = file.read()
+                    return 'ok\n'
+                else:
+                    return 'too big\n'
             else:
-                file = request.files['file']
-                storage[key] = file.read()
                 return 'unwanted\n'
         else:
             if key not in storage:
