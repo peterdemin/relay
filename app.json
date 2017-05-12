@@ -1,5 +1,5 @@
 {
-  "name": "Secure relay for small payloads",
+  "name": "Relay",
   "description": "Exchange small files without direct network access",
   "image": "heroku/python",
   "repository": "https://github.com/peterdemin/relay",
